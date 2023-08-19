@@ -1,0 +1,36 @@
+def soma(num1, num2):
+   resultado = num1 + num2
+   return resultado
+
+def subtracao(num1, num2):
+    resultado = num1 - num2
+    return resultado
+
+def multiplicacao(num1, num2):
+    resultado = num1 * num2
+    return resultado    
+
+def divisao(num1, num2):
+    resultado = num1 / num2
+    return resultado  
+
+n1 = float(input("Digite o primeiro número: "))
+n2 = float(input("Digite o segundo número: "))
+operacao = str(input("Digite qual das operações deseja realizar: + | - | * | / |:   "))   
+
+if(operacao == '+'):
+   total = soma(n1, n2)
+   print(total)
+
+elif(operacao == '-'):
+   total = subtracao(n1, n2)
+   print(total)
+elif(operacao == '*'):
+   total = multiplicacao(n1, n2)
+   print(total)
+elif(operacao == '/'):
+   total = divisao(n1, n2)
+   print(total) 
+
+else: 
+  print("Opção inválida!")
